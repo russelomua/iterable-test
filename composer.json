@@ -1,0 +1,16 @@
+{
+    "name": "russelomua/iterable-test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Nikolaj Klyashtornyj",
+            "email": "russel.omua@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "IterableTest\\": "src"
+        }
+    }
+}
