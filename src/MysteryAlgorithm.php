@@ -4,13 +4,15 @@ namespace IterableTest;
 
 class MysteryAlgorithm
 {
+    /**
+     * @return \Traversable|iterable
+     */
     public static function transform(array $row): iterable
     {
-        $index = 0;
         $inner = explode(' ', $row[6]);
         foreach ($row as $i => $value) {
-            yield $index => $value;
-            yield $index => $inner[$i] ?? 'test';
+            yield $value;
+            yield $inner[$i] ?? 'test';
         }
     }
 }
